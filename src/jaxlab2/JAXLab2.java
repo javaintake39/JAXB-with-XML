@@ -1,5 +1,6 @@
 package jaxlab2;
 
+import demo.Container;
 import demo.Content;
 import demo.MessageInfo;
 import demo.ObjectFactory;
@@ -25,22 +26,28 @@ public class JAXLab2 {
             Unmarshaller unmarsh = context.createUnmarshaller();   // convert xml content into java object
 
             JAXBElement JAXBChatMessage = (JAXBElement) unmarsh.unmarshal(new File(xmlPath)); // demo.mxl
-            Content content = (Content) JAXBChatMessage.getValue();
-            System.out.println(content.getMessages());
-            List<MessageInfo> messageInfos = (List<MessageInfo>) content.getMessages().getMessage();
-            for (int i = 0; i < messageInfos.size(); i++) {
-                System.out.println("To        >" + messageInfos.get(i).getToPhone());
-                System.out.println("From      >" + messageInfos.get(i).getFromPhone());
-                System.out.println("Content   >" + messageInfos.get(i).getContent());
-                System.out.println("Date      >" + messageInfos.get(i).getDate());
-                System.out.println("fontColor >" + messageInfos.get(i).getFontColor());
-                System.out.println("fontSize  >" + messageInfos.get(i).getFontSize());
-                System.out.println("fontFamily >" + messageInfos.get(i).getFontFamily());
+            Container container = (Container) JAXBChatMessage.getValue();
+            System.out.println(container.getMessages());
+
+            List<MessageInfo> message = container.getMessages().getMessage();
+
+            for (int i = 0; i < message.size(); i++) {
+                System.out.println("To        >" + message.get(i).getToPhone());
+                System.out.println("From      >" + message.get(i).getFromPhone());
+                System.out.println("Content   >" + message.get(i).getContent());
+                System.out.println("Date      >" + message.get(i).getDate());
+                System.out.println("fontColor >" + message.get(i).getFontColor());
+                System.out.println("fontSize  >" + message.get(i).getFontSize());
+                System.out.println("fontFamily >" + message.get(i).getFontFamily());
+                System.out.println("backgroundColor >" + message.get(i).getBackgroundColor());
+                System.out.println("isBold " + message.get(i).getIsBold());
+                System.out.println("isItalic " + message.get(i).getIsItalic());
+                System.out.println("isUnderline " + message.get(i).getIsUnderline());
                 System.out.println("----------------------------------------");
             }
 
             ObjectFactory factory = new ObjectFactory();
-            JAXBElement History = factory.createHistory(content);
+            JAXBElement History = factory.createHistory(container);
             Marshaller marsh = context.createMarshaller();
             marsh.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
             marsh.marshal(History, new FileOutputStream("output.xml"));   // After 

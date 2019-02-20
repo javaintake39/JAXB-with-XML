@@ -9,6 +9,10 @@
             <fontColor>#000000</fontColor>
             <fontFamily>serif</fontFamily>
             <fontSize>24</fontSize>
+            <isUnderline>true</isUnderline>
+            <isBold>false</isBold>
+            <isItalic>false</isItalic>
+            <backgroundColor>#000FFF</backgroundColor>
         </message>
         <message>
             <fromPhone>11</fromPhone>
@@ -18,6 +22,10 @@
             <fontColor>#FFFFFF</fontColor>
             <fontFamily>Arial</fontFamily>
             <fontSize>30</fontSize>
+            <isUnderline>true</isUnderline>
+            <isBold>false</isBold>
+            <isItalic>false</isItalic>
+            <backgroundColor>#000FFF</backgroundColor>
         </message>
         <message>
             <fromPhone>13</fromPhone>
@@ -27,6 +35,10 @@
             <fontColor>#FC0011</fontColor>
             <fontFamily>sans-serif</fontFamily>
             <fontSize>20</fontSize>
+            <isUnderline>true</isUnderline>
+            <isBold>false</isBold>
+            <isItalic>false</isItalic>
+            <backgroundColor>#000FFF</backgroundColor>
         </message>
     </messages>
 </history>

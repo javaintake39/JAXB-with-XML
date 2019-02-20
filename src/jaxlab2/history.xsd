@@ -1,5 +1,6 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="history" type="Content">
+    <xs:element name="history" type="container">
+        
     </xs:element>
     <xs:complexType name="messageInfo">
         <xs:sequence>
@@ -10,19 +11,23 @@
             <xs:element type="xs:string" name="fontColor"/>
             <xs:element type="xs:string" name="fontFamily"/>
             <xs:element type="xs:byte" name="fontSize"/>
+            <xs:element type="xs:string" name="isUnderline"/>
+            <xs:element type="xs:string" name="isBold"/>
+            <xs:element type="xs:string" name="isItalic"/>
+            <xs:element type="xs:string" name="backgroundColor"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="messageContainer">
+    <xs:complexType name="content">
         <xs:sequence>
-            <xs:element name="message" maxOccurs="unbounded" minOccurs="0" type="messageInfo">
-                
+            <xs:element name="message" maxOccurs="unbounded" minOccurs="0" type="messageInfo"> 
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="Content">
+    <xs:complexType name="container">
         <xs:sequence>
-            <xs:element name="messages" type="messageContainer">
+            <xs:element name="messages" type="content">
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    
 </xs:schema>
