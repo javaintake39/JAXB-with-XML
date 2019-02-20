@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<history>
+    <messages>
+        <message>
+            <fromPhone>10</fromPhone>
+            <toPhone>10</toPhone>
+            <content>Hello ya gma3a</content>
+            <date>2019-02-20-08:00</date>
+            <fontColor>#000000</fontColor>
+            <fontFamily>serif</fontFamily>
+            <fontSize>24</fontSize>
+        </message>
+        <message>
+            <fromPhone>11</fromPhone>
+            <toPhone>13</toPhone>
+            <content>This is Second message</content>
+            <date>2019-04-22-06:00</date>
+            <fontColor>#FFFFFF</fontColor>
+            <fontFamily>Arial</fontFamily>
+            <fontSize>30</fontSize>
+        </message>
+        <message>
+            <fromPhone>13</fromPhone>
+            <toPhone>15</toPhone>
+            <content>This is third message</content>
+            <date>2019-09-22-08:50</date>
+            <fontColor>#FC0011</fontColor>
+            <fontFamily>sans-serif</fontFamily>
+            <fontSize>20</fontSize>
+        </message>
+    </messages>
+</history>

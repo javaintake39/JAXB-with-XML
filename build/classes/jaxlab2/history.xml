@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="history.xsd">
+    <messages>
+        <message>
+            <fromPhone>010</fromPhone>
+            <toPhone>010</toPhone>
+            <content>Hello ya gma3a</content>
+            <date>2019-02-20-08:00</date>
+            <fontColor>#000000</fontColor>
+            <fontFamily>serif</fontFamily>
+            <fontSize>24</fontSize>
+        </message>
+       <message>
+            <fromPhone>011</fromPhone>
+            <toPhone>013</toPhone>
+            <content>This is Second message</content>
+            <date>2019-04-22-06:00</date>
+            <fontColor>#FFFFFF</fontColor>
+            <fontFamily>Arial</fontFamily>
+            <fontSize>30</fontSize>
+        </message>
+        <message>
+            <fromPhone>013</fromPhone>
+            <toPhone>015</toPhone>
+            <content>This is third message</content>
+            <date>2019-09-22-08:50</date>
+            <fontColor>#FC0011</fontColor>
+            <fontFamily>sans-serif</fontFamily>
+            <fontSize>20</fontSize>
+        </message>
+    </messages>
+</history>
